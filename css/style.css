@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #333;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.container {
+    border: 1px solid #000;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+/*header*/
+
+#header {
+    width: 100%;
+background-color: #F5DF4E;
+}
+
+/*home*/
+#home {
+    background-color: #F5DF4E;
+}
+.profile_img {
+    width: 100%;
+
+}
+.profile_img img {
+    border: 10px solid #333;
+    width: 250px;
+    border-radius: 50%;
+}
+.home_contact {
+    background-color: #F5DF4E;
+}
