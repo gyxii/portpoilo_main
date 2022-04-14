@@ -1,46 +1,298 @@
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Libre Franklin';
     color: #333;
+    font-size: 16px;
+    overflow-x: hidden;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
-button{
+
+button {
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 .container {
+    width: 100%;
+    position: relative;
     border: 1px solid #000;
     max-width: 1250px;
     margin: 0 auto;
 }
+
 /*header*/
 
 #header {
+    font-family: 'Libre Franklin', sans-serif;
+    position: relative;
     width: 100%;
-background-color: #F5DF4E;
+    background-color: #F5DF4E;
+}
+
+.logo a {
+
+    font-size: 1.5rem;
+}
+input[id="menuicon"] {
+    display: none;
+
+}
+
+input[id="menuicon"]+label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 9999;
+    left: 97%;
+    top: -25px;
+    overflow: hidden;
+}
+
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #333;
+    transition: all .35s;
+
+
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: -100%;
+    z-index: 999;
+    transition: all .35s;
+
+}
+
+input[id="menuicon"]:checked+label+div {
+    left: 0;
 }
 
 /*home*/
 #home {
+    font-family: 'Libre Franklin', sans-serif;
     background-color: #F5DF4E;
+    padding-top: 70px;
 }
+
+
+.text{
+    font-size: 4rem;
+    display: inline; vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+  }
+
 .profile_img {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.profile_img img {
+
+    border: 10px solid #333;
+    width: 400px;
+    border-radius: 50%;
+    display: block;
+
+
+}
+
+.home_contact {
+    background-color: #F5DF4E;
+   padding-bottom: 25px;
+}
+
+.flex_box {
+    display: flex;
+
+
+
+
+}
+
+.title {
+    margin: 100px 0;
     width: 100%;
 
 }
-.profile_img img {
-    border: 10px solid #333;
-    width: 250px;
-    border-radius: 50%;
+
+.title h1 {
+    font-size: 4rem;
+
+
 }
-.home_contact {
+
+.contact_btn {
+
+    margin-top: 100px;
+    text-align: center;
+    mb100
+}
+
+/*main*/
+#about_me {
+    padding: 100px 0;
+}
+.center_text {
+
+    text-align: center;
+}
+.title_box {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 8px 50px;
     background-color: #F5DF4E;
+
+   
+}
+.text_title {
+
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: 'KOTRA_GOTHIC';
+}
+
+.main_txt {
+  
+    display: flex;
+    
+    
+}
+.txt_web {
+    margin-bottom: 150px;
+    font-size: 0.8rem;
+    margin-top: 130px;
+    margin-right: 350px;
+    line-height: 30px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.right_text p {
+  margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #F5DF4E;
+    background-color:#F5DF4E;
+    border-radius: 50%;
+    text-indent: -9999px;
+    
+    
+}
+
+.description ul li {
+    font-family: 'KOTRA_GOTHIC';
+    font-size: 0.8rem;
+}
+.description ul {
+    font-family: 'KOTRA_GOTHIC';
+    display: flex;
+    justify-content: space-between;
+}
+.flex_box ul {
+  width: 100%;
+  text-align: center;
+
+}
+.flex_box ul li {
+ width: 100%;
+ font-size: 0.8rem;
+ text-align: center;
+  margin-top: 40px;
+  line-height: 25px;
+    font-family: 'KOTRA_GOTHIC';
+}
+.flex_box ul li strong {
+    width: 100%;
+
+text-align: center;
+ 
+}
+ {
+   
+}
+i {
+    width: 100%;
+    text-align: center;
+   font-size: 3rem;
+   color: #F5DF4E;
+   margin-top: 100px;
+}
+
+/*skils*/
+#skill .flex_box {
+    display: flex;
+    justify-content: center;
+
+}
+.academy {
+    width: 40%;
+   height: 250px;
+    border-left: 1px solid #F5DF4E;
+   
+}
+.license {
+    width: 40%;
+
+    border-left: 1px solid #F5DF4E;
+}
+.license ul li {
+    line-height: 10px;
 }

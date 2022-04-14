@@ -8,15 +8,19 @@
     <title>2022 Portpolio</title>
     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,900;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,900;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--파비콘 -->
     <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- js -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -28,7 +32,16 @@
             <div class="logo">
                 <a href="#">Kyung Ah</a>
             </div>
-        
+
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </label>
+
+            <div class="sidebar"></div>
         </div>
 
 
@@ -37,26 +50,189 @@
     <!--header-->
 
     <section id="home">
-      
+    
         <div class="home_container">
             <div class="container">
-                <h1>
-                    Hi,I'M <br> PUBLISHER
-                </h1>
-    
-                <div class="profile_img">
-                    <img src="img/nav_img.jpg" alt="main-img">
-    
+                <div class="flex_box">
+                    <div class="title">
+                        <h1>
+                            Hello, I'm
+                        </h1>
+                        <div class="text">
+                            
+                        </div>
+
+                        <p class="typing"></p> 
+                    </div>
+
+
+                    <div class="profile_img">
+                        <img src="img/nav_img.jpg" alt="main-img">
+
+                    </div>
+
                 </div>
-    
+
                 <div class="contact_btn">
                     <button class="home_contact">Contact Me</button>
                 </div>
             </div>
-         
+
+        </div>
+    </section>
+<!-- home -->
+
+    <section id="main">
+        <div class="container">
+            <div class="center_text">
+                <p class="title_box">About me</p>
+                <h2 class="text_title">저를 소개합니다</h2>
+            </div>
+           
+            <div class="main_txt">
+                <p class="txt_web">
+                    웹 컨텐츠를 구현하기 위해 필요한, 다양한 도전, 스킬, 트렌드에 관심이 많아 <br>
+                    빠르게 변하는 웹 프로그램을 사용자 입장에서 생각하며, 더 좋은 방향으로 갈 수 있는 길을 고민합니다. <br>
+                    새로운 경험을 맞이하는 것에 흥미가 있고, 팀과의 소통을 중요시하여 프로젝트를 이끌어 나갈 수 있습니다. <br>
+                    시간과 약속을 엄격하게 준수하며, 계획적으로 일을 해 나갈 수 있습니다. <br>
+                    아직 화려한 스킬이나 완벽한 역량을 갖추지 않았지만 프로젝트에 참여하여 더 열심히 해 보고자 합니다.
+                </p>
+                <div class="right_text">
+                 <p>text</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <ul>
+                    <li><strong>Name :</strong> 
+                        <br>
+                        송경아
+                    </li>
+                    <li>
+                        <strong>Emaill : </strong>
+                        <br>
+                        thdruddk02@naver.com
+
+                    </li>
+                    <li>
+                        <strong>Date of birth :</strong>
+                        <br>
+                        10 October, 1997
+
+                    </li>
+                    <li>
+                        <strong>Adress :</strong>
+                        <br>
+                        경기도 부천시 원미구 약대로 19번길 한솔타운 401호
+                    </li>
+                    
+                </ul>
+
+
+            </div>
+
         </div>
     </section>
 
+    <!--main-->
+
+    <section id="about_me">
+        <div class="container">
+            <div class="center_text">
+                <p class="title_box">What I do?</p>
+              
+            </div>
+
+        <div class="flex_box">
+            <ul>
+                <li><i class="fa-solid fa-copy"></i></i></li>
+                <li> <strong>웹 표준, 접근성</strong> </li> 
+                <li>콘텐츠 내용에 알맞은 시맨틱 태그, <br>
+                    웹 표준, 접근성을 준수한 HTML 마크업이 <br>
+                    가능하며, 하드코딩이 가능합니다.
+
+
+                </li>
+
+            </ul>
+
+            <ul>
+                <li><i class="fa-solid fa-palette"></i></i></li>
+                <li><strong>웹 디자인</strong></li>
+                <li>Photoshop을 이용한 사진 보정 및 로고, <br>
+                    배너, 아이콘 등의 디자인 작업이 가능하며, <br>
+                    XD를 활용한 웹 사이트 레이아웃 시안 제작이 <br> 
+                    가능합니다.
+
+
+                </li>
+
+            </ul>
+
+            <ul>
+                <li><i class="fa-solid fa-pen-to-square"></i></i></li>
+                <li><strong>웹 코딩</strong></li> 
+                
+                <li>
+                    HTML, CSS, JAVASCRIPT, JQURY 프로그램을 <br>
+                    이용한 코딩이 가능하고, 적응형, 반응형 <br>
+                    웹 사이트 제작, 유지보수 등의 일이 가능합니다.
+                </li>
+
+            </ul>
+        </div>
+      
+
+
+        </div>
+    </section>
+<!--about_me-->
+
+
+    <section id="skill">
+        <div class="container">
+            <div class="center_text">
+                <p class="title_box">Skills</p>
+              
+            </div>
+
+        <div class="flex_box">
+          <div class="academy">
+              <h3>Academy</h3>
+              <ul>
+                <li>
+                    UI/UX 스마트앱 콘텐츠 제작과정 <br>
+                    2021.09.29 ~ 2022.02.25
+                </li>
+                <li>
+                    웹퍼블리셔(웹 디자인) UI/UX 프론트앤드과정 <br>
+                    2020.01.07 ~ 2020.05.27s
+                </li>
+
+              </ul>
+          </div>
+
+          <div class="license">
+            <h3>License</h3>
+              <ul>
+                  <li> 웹디자인기능사 </li>
+                  <li> GTQ 1급 </li>
+                  <li> GTQi 1급</li>
+                  <li>GTQid 1급</li>
+
+                  <div class="license_btn">
+                    <a href="#">이력서</a>
+                  </div>
+              </ul>
+
+            
+             
+          </div>
+
+        </div>
+    </section>
+
+    <!--skill-->
 </body>
 
 </html>
