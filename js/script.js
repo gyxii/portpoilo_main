@@ -20,3 +20,13 @@ function typing(){
 setInterval(typing, 200)
 
 
+
+
+// Handle click on "contact me" button on home
+const homeContactBtn = document.querySelector('.home_contact');
+homeContactBtn.addEventListener('click', () => {
+ 
+        const scrollTo = document.querySelector('#contact');
+        scrollTo.scrollIntoView({ behavior: 'smooth' });
+     
+});
