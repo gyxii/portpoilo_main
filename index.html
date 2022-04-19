@@ -19,6 +19,11 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- AOS 라이브러리 불러오기-->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <!-- js -->
     <script src="js/script.js" defer></script>
 </head>
@@ -69,14 +74,17 @@
             <div class="container">
                 <div class="flex_box">
                     <div class="title">
-                        <h1>
+                        <h1 data-aos="zoom-out-right" data-aos-offset="200"
+                     
+                        data-aos-duration="2000"
+                        data-aos-once="false">
                             Hello, I'm
                         </h1>
                         <div class="text">
 
                         </div>
 
-                        <p class="typing"></p>
+                        <p class="typing" ></p>
                     </div>
 
 
@@ -101,11 +109,17 @@
         <div class="container">
             <div class="center_text">
                 <p class="title_box">About me</p>
-                <h2 class="text_title">저를 소개합니다</h2>
+                <h2 class="text_title" data-aos="zoom-out-right" data-aos-offset="200"
+                     
+                data-aos-duration="2000"
+                data-aos-once="false">저를 소개합니다</h2>
             </div>
 
             <div class="main_txt">
-                <p class="txt_web">
+                <p class="txt_web" data-aos="zoom-out-right" data-aos-offset="200"
+                     
+                data-aos-duration="2000"
+                data-aos-once="false">
                     웹 컨텐츠를 구현하기 위해 필요한, 다양한 도전, 스킬, 트렌드에 관심이 많아 <br>
                     빠르게 변하는 웹 프로그램을 사용자 입장에서 생각하며, 더 좋은 방향으로 갈 수 있는 길을 고민합니다. <br>
                     새로운 경험을 맞이하는 것에 흥미가 있고, 팀과의 소통을 중요시하여 프로젝트를 이끌어 나갈 수 있습니다. <br>
@@ -159,7 +173,7 @@
             </div>
 
             <div class="flex_box">
-                <ul>
+                <ul data-aos="slide-left">
                     <li><i class="fa-solid fa-copy"></i></i></li>
                     <li> <strong>웹 표준, 접근성</strong> </li>
                     <li>콘텐츠 내용에 알맞은 시맨틱 태그, <br>
@@ -184,7 +198,7 @@
 
                 </ul>
 
-                <ul>
+                <ul data-aos="slide-left">
                     <li><i class="fa-solid fa-pen-to-square"></i></i></li>
                     <li><strong>웹 코딩</strong></li>
 
@@ -441,5 +455,9 @@
 
         <!--footer-->
 </body>
-
+<script>
+    AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    </script>
+    
+   
 </html>
