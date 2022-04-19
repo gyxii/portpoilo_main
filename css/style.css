@@ -41,7 +41,6 @@ input {
 .container {
     width: 100%;
     position: relative;
-
     max-width: 1250px;
     margin: 0 auto;
 }
@@ -414,58 +413,110 @@ i {
 
 /*project*/
 #project {
-    padding: 100px 0px;
+padding-bottom: 300px;
 }
 
 #project .title_box {
     margin-bottom: 80px;
 }
+.work__categories {
+    margin: 40px;
+   text-align: center;
+}
 
+.category__btn.active,.category__btn:hover .category__Count {
+    opacity: 1;
+    top: 0;
+}
+.category__btn{
+  background: #F5DF4E;
+  padding:10px 48px;
+  border-radius: 5px;
+  font-size: 1rem;
+} 
+.category__btn:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+.category__Count {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -25px;
+    left: 5px;
+    opacity: 0;
+    transition: all 0.5s;
 
-.project_list ul {
+   
+}
+
+.work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    transition: all ease-in .5s;
+
+}
+.project {
+    position: relative;
+    width: 280px;
+    margin: 3px;
     display: flex;
     justify-content: center;
-    gap: 60px;
+    align-items: center;
+    
+  
+ 
 }
-
-.project_list ul li {
-    width: 70px;
-    text-align: center;
-    border-bottom: 1px solid #F5DF4E;
-    padding-bottom: 5px;
+.project.invisible {
+    display: none;
 }
+.project img {
+max-width: 100%;
+max-height: 100%;
 
-.flex {
-    max-width: 1000px;
+
+
+ 
+}
+.project__description {
     width: 100%;
+    height: 100%;
     display: flex;
-
-    margin: 0 auto;
-
-
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background: #000;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all ease-in 0.2s;
+   
 }
-
-.flex li {
-    border: 1px solid #000;
-    padding: 150px;
-
-
-
+.project:hover .project__description {
+    opacity: 0.8;
+   
 }
-
-.flex_box01 ul {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-
-
-}
-
-.flex_box01 ul li {
-    width: 100%;
+.project__description h3 {
+    color: #fff;
     text-align: center;
-    border: 1px solid #000;
-    padding: 150px;
+   
+}
+.project__description h3:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-top: 8px;
+    margin-left: -23px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #F5DF4E;
 }
 
 /*footer*/
@@ -534,3 +585,4 @@ text-align: center;
     background: #333;
  
 }
+
